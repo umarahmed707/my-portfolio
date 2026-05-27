@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+
 import './App.css';
+// import Login from './Component/Login';
+// import Sigup from './Component/Sigup';
+// import { initializeApp } from "firebase/app";
+import About from './Component/About';
+import Contact from './Component/Contact';
+import Footer from './Component/Footer';
+import Hero from './Component/Hero';
+import Nabvar from './Component/Nabvar';
+import Portfolio from './Component/Portfolio';
+import Service from './Component/Service';
 
 function App() {
+
+//  const firebaseConfig = {
+//     apiKey: "AIzaSyBSF6Rg9ST3BykoqsT91s80NXOmGtb8rY0",
+//     authDomain: "social-app-4ea7d.firebaseapp.com",
+//     projectId: "social-app-4ea7d",
+//     storageBucket: "social-app-4ea7d.firebasestorage.app",
+//     messagingSenderId: "173041482743",
+//     appId: "1:173041482743:web:ae324fe02f696b9b538cf2",
+//   };
+
+//   const app = initializeApp(firebaseConfig);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      
+   <Nabvar/>
+   <Hero/>
+   <Service/>
+   <About/>
+   <Portfolio/>
+   <Contact/>
+   <Footer/>
     </div>
   );
 }
