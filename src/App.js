@@ -1,4 +1,5 @@
 
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 // import Login from './Component/Login';
 // import Sigup from './Component/Sigup';
@@ -7,9 +8,10 @@ import About from './Component/About';
 import Contact from './Component/Contact';
 import Footer from './Component/Footer';
 import Hero from './Component/Hero';
-import Nabvar from './Component/Nabvar';
+
 import Portfolio from './Component/Portfolio';
 import Service from './Component/Service';
+import Navbar from './Component/Nabvar';
 
 function App() {
 
@@ -26,13 +28,15 @@ function App() {
   return (
     <div>
       
-   <Nabvar/>
-   <Hero/>
-   <Service/>
-   <About/>
-   <Portfolio/>
-   <Contact/>
-   <Footer/>
+      <Navbar/>
+
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/service" element={<Service />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </div>
   );
 }

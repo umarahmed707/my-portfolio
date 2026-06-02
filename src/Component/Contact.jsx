@@ -23,7 +23,8 @@ const Contact = () => {
             <select>
               <option>Service Of Interest</option>
               <option>Web Development</option>
-              <option>UI/UX Design</option>
+              <option>React application</option>
+              <option>Landing Page</option>
               <option>SEO</option>
             </select>
           </div>

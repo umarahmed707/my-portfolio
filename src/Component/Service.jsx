@@ -10,9 +10,9 @@ import { SlSpeedometer } from 'react-icons/sl';
 const Service = () => {
         return (
                 <section className='Service-container'>
-                        <b> <p style={{ fontSize: "40px", color: "#FFFFFF" }}>Services</p></b>
-                        <p style={{ fontSize: "20px", color: "#707070" }}>I build fast, responsive, and modern websites using clean code and user-friendly design to help businesses grow online.</p>
-                        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", margin: "60px 40px", gap: "40px" }}>
+                        <b>Services</b>
+                        <p>I build fast, responsive, and modern websites using clean code and user-friendly design to help businesses grow online.</p>
+                        <div className='Service-container2'>
                                 <Card image={<TbLayout className='icon' />} name="Modern Web Design" description="Creating clean, modern, and visually appealing website designs that reflect your brand identity.
 Focused on user experience, readability, and professional layouts across all devices."/>
                                 <Card image={<MdOutlineDevices className='icon' />

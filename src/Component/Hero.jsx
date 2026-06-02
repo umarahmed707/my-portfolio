@@ -9,16 +9,16 @@ const Hero = () => {
   return (
 
     <section className='Hero-section'>
-      <div style={{marginTop:"50px"}}>
+      <div>
         <p style={{ fontSize: "24px" }}>Hi I am <br /><span style={{ fontSize: "28px" }}>Umar Ahmed</span></p>
-        <h1 style={{ fontSize: "70px", marginTop: "20px" }}>React JS Developer</h1>
-        <div style={{ display: "flex", gap: "20px", marginBottom: "40px", marginTop:"20px"}}>
+        <h1>React JS Developer</h1>
+        <div className='hero-img'>
           <img src={img1} alt="" className='icon' />
           <img src={img2} alt="" className='icon' />
           <img src={img3} alt="" className='icon' />
           <img src={img4} alt="" className='icon' />
         </div>
-        <div style={{ display: "flex", gap: "40px" }}>
+        <div className='hero-btn'>
           <button className='btn'>Hire Me</button>
           <button className='Download'>Resume Download</button>
         </div>
@@ -40,29 +40,12 @@ const Hero = () => {
     </div>
       </div>
 <div
-  style={{
-    position: "relative",
-    width: "618px",
-    height: "618px",
-    marginTop: "80px",
-    borderRadius: "50%",
-    
-    backgroundColor: "#2d2c2c",
-  }}
+  className='pic-container'
 >
   <img
     src={img5}
     alt=""
-    style={{
-      position: "absolute",
-    
-      top: "36%",
-      left: "60%",
-      transform: "translate(-50%, -50%)",
-      width: "750px",
-      height: "781px",
-      objectFit: "cover",
-    }}
+    className='hero-pic'
   />
 </div>
     </section>
