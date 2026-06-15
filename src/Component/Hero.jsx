@@ -4,6 +4,8 @@ import img2 from '../assets/Frame 53.png'
 import img3 from '../assets/Frame 54.png'
 import img4 from '../assets/Frame 55.png'
 import img5 from '../assets/My-pic.png'
+import { RxGithubLogo } from 'react-icons/rx'
+import { CiLinkedin } from 'react-icons/ci'
 
 const Hero = () => {
   return (
@@ -13,10 +15,9 @@ const Hero = () => {
         <p style={{ fontSize: "24px" }}>Hi I am <br /><span style={{ fontSize: "28px" }}>Umar Ahmed</span></p>
         <h1>React JS Developer</h1>
         <div className='hero-img'>
-          <img src={img1} alt="" className='icon' />
-          <img src={img2} alt="" className='icon' />
-          <img src={img3} alt="" className='icon' />
-          <img src={img4} alt="" className='icon' />
+          
+          <CiLinkedin className='icon' />
+          <RxGithubLogo className="icon" />
         </div>
         <div className='hero-btn'>
           <button className='btn'>Hire Me</button>

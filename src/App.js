@@ -29,14 +29,24 @@ function App() {
     <div>
       
       <Navbar/>
+         <section id='home'>
+        <Hero/>
+      </section>
+   
+<section id="service">
+  <Service />
+</section>
+   <section id='about'>
+        <About/>
+      </section>
+<section id="portfolio">
+  <Portfolio />
+</section>
 
-      <Routes>
-        <Route path="/" element={<Hero />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/service" element={<Service />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+<section id="contact">
+  <Contact />
+</section>
+<Footer/>
     </div>
   );
 }

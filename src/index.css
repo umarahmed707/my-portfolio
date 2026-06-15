@@ -417,21 +417,23 @@ code {
 /* ==========================================================================
    7. PORTFOLIO SECTION
    ========================================================================== */
-.portfolio-container2 {
+
+
+.portfolio-container2  {
+
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
-  gap: 15px;
-  margin-top: 120px;
-  padding: 0 8%;
+  align-items: center;
+  margin: 20px 40px;
+  margin-top: 80px;
 }
 
-.portfolio-container2 h1 {
+.portfolio-container2 h1{
   font-size: 40px;
-  color: #FEFEFE;
-}
 
+}
+ 
 .portfolio-container {
   display: flex;
   justify-content: center;
@@ -442,20 +444,41 @@ code {
   gap: 20px;
 }
 
-.Portfolio-card {
+ .Portfolio-card {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 360px;
+  max-width: 380px;
   min-height: 320px;
   background: #191919;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  padding: 30px 25px;
+  padding: 0 25px;
+  padding-bottom: 20px;
   text-align: center;
   gap: 20px;
   transition: all 0.3s ease; 
+}
+.card-img {
+  width: 380px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags span {
+  padding: 8px 14px;
+  border: 1px solid #4f46e5;
+  border-radius: 10px;
+  color: #7c7cff;
+  font-size: 14px;
 }
 
 .Portfolio-card h2 {
@@ -467,6 +490,21 @@ code {
   font-size: 14px;
   color: #8c8c8c;
 }
+.card-footer {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 160px;
+}
+
+.card-footer a {
+  text-decoration: none;
+  color: #b3b3c7;
+}
+
+.card-footer a:last-child {
+  color: #7c7cff;
+}
 
 .port-btn {
   padding: 10px 25px;
@@ -477,21 +515,17 @@ code {
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
-}
+} 
 
-/* Portfolio Hovers */
-.Portfolio-card:hover {
-  background-color: #FA6E00;
-}
-.Portfolio-card:hover h2, 
-.Portfolio-card:hover p {
-  color: #FFFFFF;
-}
+
+
 .Portfolio-card:hover .port-btn {
   color: #FA6E00;
   background-color: #FFFFFF;
   border-color: #FFFFFF;
-}
+} 
+
+
 
 /* ==========================================================================
    8. CONTACT SECTION
