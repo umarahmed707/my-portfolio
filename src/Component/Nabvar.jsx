@@ -27,7 +27,9 @@ function Navbar() {
   <li><a href="#contact">Contact</a></li>
 
       </ul>
+      <a href="#contact">
       <button className='btn'>Hire Me</button>
+      </a>
 
     </nav>
   );

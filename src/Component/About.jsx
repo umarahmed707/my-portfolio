@@ -17,12 +17,15 @@ const About = () => {
       <p>I’m a passionate developer who enjoys creating clean, modern web experiences and continuously learning new skills to grow professionally.</p>
 
       <div className='About-container2'>
-        
-          <img
-            src={img5}
-            alt=""
-className='about-img'
-          />
+            <div
+               className='pic-container'
+             >
+               <img
+                 src={img5}
+                 alt=""
+                 className='hero-pic'
+               />
+             </div>
         
         <div className='About-text'>
           <p>
@@ -31,7 +34,9 @@ className='about-img'
             My goal is to build a successful career where I can use my knowledge and abilities to create useful and meaningful work. I also enjoy working in a positive and learning environment where I can collaborate with others, share ideas, and gain more experience.
             I strongly believe in self-improvement and I am always ready to face challenges because they help me become better and more skilled. I am committed to achieving my goals and becoming a valuable and skilled professional in the future.
           </p>
-          <button className='Download'>DownLoad CV</button>
+            <a href="/Umar_Ahmed_Resume.pdf" download>
+          <button className='Download' style={{marginTop:"20px"}}>Resume DownLoad</button>
+          </a>
         </div>
       </div>
 

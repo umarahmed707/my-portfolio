@@ -34,6 +34,12 @@ const Portfolio = () => {
       description: "Naked Turtle is a creative and modern brand focused on unique designs, innovation, and quality experiences. It user-friendly solutions with a fresh and modern approach for customers",
       link: "https://naked-turtle.vercel.app/",
     },
+        {
+      image: img7,
+      title: "Nusa_Tech",
+      description: "Nusa Tech is a modern technology platform that provides innovative digital solutions and smart applications for users It focuses on creating user-friendly",
+      link: "https://umarahmed707.github.io/mini_web/",
+    },
     {
       image: img5,
       title: "Weather_App",
@@ -47,12 +53,7 @@ const Portfolio = () => {
       description: "This Namaz App allows users to enter their city and country name to get accurate prayer timings instantly. It provides daily Namaz schedules to help users pray on time.",
       link: "https://umarahmed707.github.io/Namaz_Timing/",
     },
-    {
-      image: img7,
-      title: "Nusa_Tech",
-      description: "Nusa Tech is a modern technology platform that provides innovative digital solutions and smart applications for users It focuses on creating user-friendly",
-      link: "https://umarahmed707.github.io/mini_web/",
-    },
+
     {
       image: img8,
       title: "Todo_List",
@@ -74,11 +75,18 @@ const Portfolio = () => {
 
         <div className="Portfolio-card" key={index}>
           {project.image && (
-            <img
-              src={project.image}
-              alt={project.title}
-              className="card-img"
-            />
+
+                <a 
+      href={project.link} 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <img 
+        src={project.image} 
+        alt={project.title}
+        className="card-img"
+      />
+    </a>
           )}
 
           <div className="tags">
