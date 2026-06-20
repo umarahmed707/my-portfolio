@@ -18,12 +18,12 @@ const About = () => {
 
       <div className='About-container2'>
             <div
-               className='pic-container'
+               className=''
              >
                <img
                  src={img5}
                  alt=""
-                 className='hero-pic'
+                 className='about-pic'
                />
              </div>
         
